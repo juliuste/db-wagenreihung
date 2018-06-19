@@ -1,0 +1,41 @@
+{
+	"name": "db-wagenreihung",
+	"description": "Fetch train carriage numbers and ordering for given Deutsche Bahn (DB) trains.",
+	"version": "0.0.0",
+	"keywords": [
+		"db",
+		"bahn",
+		"german",
+		"germany",
+		"rail",
+		"railway",
+		"train",
+		"wagon",
+		"waggon",
+		"wagen",
+		"reihung",
+		"wagenreihung"
+	],
+	"author": "Julius Tens <mail@juliustens.eu>",
+	"homepage": "https://github.com/juliuste/db-wagenreihung",
+	"repository": "juliuste/db-wagenreihung",
+	"bugs": "https://github.com/juliuste/db-wagenreihung/issues",
+	"main": "./index.js",
+	"files": ["index.js"],
+	"dependencies": {
+		"got": "^8.3.1",
+		"moment-timezone": "^0.5.20"
+	},
+	"devDependencies": {
+		"db-train-numbers": "0.0.1",
+		"tape": "^4.9.0"
+	},
+	"scripts": {
+		"test": "node test.js",
+		"prepare": "npm test"
+	},
+	"engines": {
+		"node": ">=8"
+	},
+	"license": "ISC"
+}
