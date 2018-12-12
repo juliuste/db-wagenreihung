@@ -1,6 +1,6 @@
 {
 	"name": "db-wagenreihung",
-	"version": "0.0.1",
+	"version": "1.0.0",
 	"description": "Fetch train carriage numbers and ordering for given Deutsche Bahn (DB) trains.",
 	"keywords": [
 		"bahn",
