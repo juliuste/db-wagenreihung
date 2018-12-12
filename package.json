@@ -1,43 +1,54 @@
 {
 	"name": "db-wagenreihung",
-	"description": "Fetch train carriage numbers and ordering for given Deutsche Bahn (DB) trains.",
 	"version": "0.0.1",
+	"description": "Fetch train carriage numbers and ordering for given Deutsche Bahn (DB) trains.",
 	"keywords": [
-		"db",
 		"bahn",
+		"db",
 		"german",
 		"germany",
 		"rail",
 		"railway",
-		"train",
-		"wagon",
-		"waggon",
-		"wagen",
 		"reihung",
-		"wagenreihung"
+		"train",
+		"wagen",
+		"wagenreihung",
+		"waggon",
+		"wagon"
 	],
-	"author": "Julius Tens <mail@juliustens.eu>",
 	"homepage": "https://github.com/juliuste/db-wagenreihung",
-	"repository": "juliuste/db-wagenreihung",
 	"bugs": "https://github.com/juliuste/db-wagenreihung/issues",
-	"main": "./index.js",
+	"repository": "juliuste/db-wagenreihung",
+	"license": "ISC",
+	"author": "Julius Tens <mail@juliustens.eu>",
 	"files": [
-		"index.js"
+		"lib/*"
 	],
+	"main": "lib/index.js",
+	"scripts": {
+		"check-deps": "depcheck",
+		"fix": "eslint --fix lib test.js",
+		"lint": "eslint lib test.js",
+		"prepublishOnly": "npm test",
+		"test": "npm run lint && npm run check-deps && node test"
+	},
 	"dependencies": {
 		"got": "^9.1.0",
 		"moment-timezone": "^0.5.21"
 	},
 	"devDependencies": {
 		"db-train-numbers": "0.0.1",
-		"tape": "^4.9.1"
-	},
-	"scripts": {
-		"test": "node test.js",
-		"prepublishOnly": "npm test"
+		"depcheck": "^0.6.11",
+		"eslint": "^5.10.0",
+		"eslint-config-standard": "^12.0.0",
+		"eslint-plugin-import": "^2.14.0",
+		"eslint-plugin-node": "^8.0.0",
+		"eslint-plugin-promise": "^4.0.1",
+		"eslint-plugin-standard": "^4.0.0",
+		"tape": "^4.9.1",
+		"tape-promise": "^4.0.0"
 	},
 	"engines": {
 		"node": ">=8"
-	},
-	"license": "ISC"
+	}
 }
