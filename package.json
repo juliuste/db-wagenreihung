@@ -37,7 +37,7 @@
 		"moment-timezone": "^0.5.21"
 	},
 	"devDependencies": {
-		"db-train-numbers": "0.0.1",
+		"db-hafas": "^3.0.1",
 		"depcheck": "^0.6.11",
 		"eslint": "^5.10.0",
 		"eslint-config-standard": "^12.0.0",
