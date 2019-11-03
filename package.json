@@ -33,19 +33,19 @@
 		"test": "npm run lint && npm run check-deps && node test"
 	},
 	"dependencies": {
-		"got": "^9.1.0",
-		"moment-timezone": "^0.5.21"
+		"got": "^9.6.0",
+		"moment-timezone": "^0.5.27"
 	},
 	"devDependencies": {
-		"db-hafas": "^3.0.1",
-		"depcheck": "^0.6.11",
-		"eslint": "^5.10.0",
-		"eslint-config-standard": "^12.0.0",
-		"eslint-plugin-import": "^2.14.0",
-		"eslint-plugin-node": "^8.0.0",
-		"eslint-plugin-promise": "^4.0.1",
-		"eslint-plugin-standard": "^4.0.0",
-		"tape": "^4.9.1",
+		"db-hafas": "^3.1.0",
+		"depcheck": "^0.9.0",
+		"eslint": "^6.6.0",
+		"eslint-config-standard": "^14.1.0",
+		"eslint-plugin-import": "^2.18.2",
+		"eslint-plugin-node": "^10.0.0",
+		"eslint-plugin-promise": "^4.2.1",
+		"eslint-plugin-standard": "^4.0.1",
+		"tape": "^4.11.0",
 		"tape-promise": "^4.0.0"
 	},
 	"engines": {
