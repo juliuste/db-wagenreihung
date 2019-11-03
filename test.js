@@ -37,7 +37,7 @@ tape('db-wagenreihung', async t => {
 	t.ok(+lastDeparture - +new Date(result.initializationDate) <= 24 * 60 * 60 * 1000, 'initializationDate')
 	t.ok(Array.isArray(result.wagons), 'wagons type')
 	t.ok(result.wagons.length > 0, 'wagons length')
-	for (let wagon of result.wagons) {
+	for (const wagon of result.wagons) {
 		t.ok(Number.isInteger(wagon.group), 'group')
 		t.ok(wagon.type.length > 4, 'type')
 		t.ok(wagon.id.length > 4, 'id')
